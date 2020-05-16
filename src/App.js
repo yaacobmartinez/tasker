@@ -4,7 +4,7 @@ import axios from "axios";
 import Home from "./components/Home";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core";
 import { SWRConfig } from "swr";
-axios.defaults.baseURL = `${process.env.API_URL}`;
+axios.defaults.baseURL = process.env.API_URL;
 
 const theme = createMuiTheme({
 	typography: {
